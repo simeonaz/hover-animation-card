@@ -8,8 +8,8 @@ const toggleDark = useToggle(isDark);
 <template>
   <button
     @click="toggleDark()"
-    class="cursor-pointer focus:outline-none"
-    :class="isDark ? 'text-white' : 'text-gray-600'"
+    type="button"
+    class="cursor-pointer flex-shrink-0 rounded-md gap-x-1.5 p-1.5 text-gray-700 dark:text-gray-200 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200 dark:hover:bg-gray-700 inline-flex items-center"
   >
     <Icon
       :name="isDark ? 'mdi:white-balance-sunny' : 'mdi:moon-waning-crescent'"
